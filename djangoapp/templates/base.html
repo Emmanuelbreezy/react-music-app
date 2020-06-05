@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/>
+    <title>Online Music Platform</title>
+    {% include 'basestatic/css.html' %}
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class='ui container center'>
+        {% include 'basestatic/navbar.html' %}
+        <div>
+          {% block content %}{% endblock content %}
+        </div>
+        {% include 'basestatic/footer.html'%}
+    </div>  
+    {% include 'basestatic/js.html' %}
+
+  </body>
+</html>
